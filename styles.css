@@ -1,0 +1,45 @@
+body {
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 300px;
+    height: 200px;
+    width: 500px;
+    background-color: #ff8cb7;
+    position: relative;
+    border: .7rem solid rgb(50, 48, 48);
+    border-bottom: 0;
+}
+
+.menu-bar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(50, 48, 48);
+    padding: .5rem 2.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    isolation: isolate;
+}
+
+.menu-bar span {
+    color: white;
+}
+
+.indicator {
+    position: absolute;
+    left: 2.5rem;
+    top: -15px;
+
+    width: 55px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background-color: rgb(50, 48, 48);
+    z-index: -1;
+}
