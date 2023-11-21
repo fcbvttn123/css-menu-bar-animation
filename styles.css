@@ -43,3 +43,16 @@ body {
     background-color: rgb(50, 48, 48);
     z-index: -1;
 }
+
+.indicator::after {
+    content: "";
+    width: 30px;
+    aspect-ratio: 1/1;
+    background-color: red;
+    border-bottom-left-radius: 20px;
+    box-shadow: -10px 20px rgb(50, 48, 48);
+
+    position: absolute;
+    right: -20px;
+    top: -80px;
+}
